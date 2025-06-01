@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EurOrbit - European Weather Forecast</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <div class="container">
+        <header class="earth-header">
+            <img src="images/earth-2113656_1280.jpg" class="earth-image" alt="Earth Image">
+        </header>
+        
+        <main class="main-content">
+            <div class="brand-section">
+                <h1 class="brand-title">EurOrbit</h1>
+                <h2 class="brand-subtitle">European Weather Forecast</h2>
+                <div class="powered-by">
+                    <span>Powered by</span>
+                    <span class="timer-badge">7Timer!</span>
+                </div>
+            </div>
+            
+            <div class="forecast-section">
+                <div class="city-selector">
+                    <select id="citySelect">
+                        <option value="">-- select a city --</option>
+                    </select>
+                </div>
+                
+                <div id="loadingMessage" class="loading-message" style="display: none;">
+                    Getting forecast ...
+                </div>
+                
+                <div id="forecastContainer" class="forecast-container" style="display: none;">
+                    <!-- Forecast cards will be populated here -->
+                </div>
+            </div>
+            
+            <div class="cloud-decoration">
+                <div class="cloud"></div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; Copyright 2023 EurOrbit</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
